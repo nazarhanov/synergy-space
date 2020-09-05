@@ -121,7 +121,7 @@ body {
   width: 162px;
   min-height: 70px;
   box-sizing: border-box;
-  padding: 13px 0 0 12px;
+  padding: 13px 16px 0;
   box-shadow: 0px 0px 10px 0px rgba(23, 59, 117, 0.55);
   position: absolute;
   top: 200%;
@@ -154,12 +154,6 @@ body {
   display: inline-block;
   vertical-align: top;
   width: 160px;
-}
-
-.content > * {
-  margin-bottom: 20px;
-  line-height: 30px;
-  font-size: 18px;
 }
 
 .nav {
@@ -216,6 +210,13 @@ body {
   max-width: 860px;
   vertical-align: top;
   position: relative;
+
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.content > * {
+  margin-bottom: 20px;
 }
 
 .content__img-1 img {
@@ -235,7 +236,7 @@ body {
 }
 
 .content p {
-  font-weight: light;
+  font-weight: 300;
   color: #221f1f;
 }
 
@@ -293,11 +294,11 @@ article li:before {
   color: #221f1f;
 }
 
-.nav-part li:before {
+.part li:before {
   display: none;
 }
 
-.nav-part {
+.part {
   text-align: center;
   font-size: 0;
 }
@@ -306,11 +307,14 @@ article li:before {
   display: inline-block;
   vertical-align: top;
   width: 233.333px;
-  height: 60px;
+  line-height: 60px;
   margin-bottom: 70px;
 }
 
 .part__pict img {
+  display: inline-block;
+  vertical-align: middle;
+
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
 
@@ -513,6 +517,7 @@ ul.content__price {
 
 .text__desc {
   font-size: 14px;
+  text-align: left;
 }
 
 .price__item:before {
@@ -576,7 +581,7 @@ ul.content__price {
   display: inline-block;
   vertical-align: top;
   width: 78.4%;
-  margin-left: 19px;
+  margin-left: 18px;
   text-align: left;
 }
 
@@ -832,6 +837,11 @@ ul.content__price {
   border-color: #ec1e79;
 }
 
+@media screen and (min-width: 1077px) {
+  .content__img-1 img {
+    margin-top: 40px;
+  }
+}
 @media screen and (max-width: 1076px) {
   .sidebar {
     width: 100%;
@@ -857,6 +867,10 @@ ul.content__price {
 }
 
 @media screen and (max-width: 855px) {
+  .footer {
+    padding-top: 28px;
+    padding-bottom: 28px;
+  }
   .footer__left,
   .footer__right,
   .footer__center {
@@ -872,20 +886,72 @@ ul.content__price {
 }
 
 @media screen and (max-width: 525px) {
+  .content__head,
+  .comment__head {
+    font-size: 32px;
+    line-height: 32px;
+  }
+  ul.content__part {
+    margin-bottom: 40px;
+  }
+  .part .part__item {
+    width: 50%;
+    margin-bottom: 48px;
+  }
+  .part__pict img {
+    max-width: 100%;
+    max-height: 100%;
+    box-sizing: border-box;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
   .pagns__text {
     width: 100%;
   }
+  .pagns__text {
+    margin-bottom: 6px;
+  }
+  .content,
+  .text__content {
+    font-size: 14.8px;
+    line-height: 24px;
+  }
+  .comments__avatar {
+    margin-bottom: 24px;
+  }
+  .logo__icon {
+    width: 64px;
+  }
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 420px) {
   .price__item {
     margin: 0;
+  }
+  .price__img {
+    width: 100%;
+  }
+  .price__link {
+    width: initial;
+    box-sizing: border-box;
+    padding: 0 16px;
+  }
+  .text__price-1 {
+    margin-top: 18px;
+  }
+  .price__name {
+    font-size: 20px;
+    line-height: 28px;
   }
   .comment-block {
     padding: 50px 30px;
   }
-  .comment__head {
-    font-size: 40px;
+  .comments__text {
+    max-width: 292px;
+    width: calc(100% - 24px);
+    margin-right: 6px;
+
+    line-height: 24px;
   }
   .phone__number {
     font-size: 16px;
