@@ -14,7 +14,9 @@
         <div class="container">
           <div class="header__left">
             <a class="logo" href="#">
-              <img class="logo__icon" src="img/logo/logo-fig.svg" alt="" />
+              <svg viewBox="0 0 99 53" width="99" height="84.8" class="logo__icon">
+                <use xlink:href="#logo"></use>
+              </svg>
             </a>
           </div>
           <div class="header__right">
@@ -37,13 +39,28 @@
             <nav class="nav">
               <ul class="nav-list">
                 <li class="nav__item" id="nav__main">
-                  <a href="workadium.html" class="nav__link">Главная</a>
+                  <a href="workadium.html" class="nav__link">
+                    <svg viewBox="0 0 18 18" width="18" height="18" class="nav__icon">
+                      <use xlink:href="#main"></use>
+                    </svg>
+                    Главная
+                  </a>
                 </li>
                 <li class="nav__item" id="nav__wallet">
-                  <a href="price.html" class="nav__link">Тарифы</a>
+                  <a href="price.html" class="nav__link">
+                    <svg viewBox="0 0 18 18" width="18" height="18" class="nav__icon nav__icon_reverse">
+                      <use xlink:href="#wallet"></use>
+                    </svg>
+                    Тарифы
+                  </a>
                 </li>
                 <li class="nav__item" id="nav__feed">
-                  <a href="#" class="nav__link">Отзывы</a>
+                  <a href="#" class="nav__link">
+                    <svg viewBox="0 0 18 18" width="18" height="18" class="nav__icon">
+                      <use xlink:href="#feed"></use>
+                    </svg>
+                    Отзывы
+                  </a>
                 </li>
               </ul>
             </nav>
@@ -60,9 +77,10 @@
             <div class="content__head">Отзывы</div>
             <ul class="commetns-list">
               <li class="comments__item">
-                <div class="comments__img">
-                  <img src="img/comments/comment__1.png" alt="" class="comments__icon" />
-                </div>
+                <picture class="comments__avatar">
+                  <source srcset="img/comments/comment__1.webp" />
+                  <img src="img/comments/comment__1.png" alt='"Oleg" avatar image' />
+                </picture>
                 <div class="comments__text">
                   <div class="text__date">12.10.2016</div>
                   <div class="text__name">Олег Павлов</div>
@@ -75,9 +93,10 @@
                 </div>
               </li>
               <li class="comments__item">
-                <div class="comments__img">
-                  <img src="img/comments/comment__2.png" alt="" class="comments__icon" />
-                </div>
+                <picture class="comments__avatar">
+                  <source srcset="img/comments/comment__2.webp" />
+                  <img src="img/comments/comment__2.png" alt='"Ernest" avatar image' />
+                </picture>
                 <div class="comments__text">
                   <div class="text__date">01.02.2016</div>
                   <div class="text__name">Эрнест Изиль</div>
@@ -90,9 +109,10 @@
                 </div>
               </li>
               <li class="comments__item">
-                <div class="comments__img">
-                  <img src="img/comments/comment__3.png" alt="" class="comments__icon" />
-                </div>
+                <picture class="comments__avatar">
+                  <source srcset="img/comments/comment__3.webp" />
+                  <img src="img/comments/comment__3.png" alt='"Elena" avatar image' />
+                </picture>
                 <div class="comments__text">
                   <div class="text__date">12.12.2015</div>
                   <div class="text__name">Елена Сургай</div>
@@ -106,9 +126,10 @@
                 </div>
               </li>
               <li class="comments__item">
-                <div class="comments__img">
-                  <img src="img/comments/comment__4.png" alt="" class="comments__icon" />
-                </div>
+                <picture class="comments__avatar">
+                  <source srcset="img/comments/comment__4.webp" />
+                  <img src="img/comments/comment__4.png" alt='"Natalia" avatar image' />
+                </picture>
                 <div class="comments__text">
                   <div class="text__date">14.08.2015</div>
                   <div class="text__name">Наталья Осадчая</div>
@@ -195,12 +216,14 @@
       <div class="container">
         <div class="footer__left">
           <div class="footer__text">
-            Сделано с любовью и старанием на курсе «HTML + CSS» в <a href="https://loftschool.com">LoftSchool</a>.
+            Сделано с любовью и старанием на курсе «HTML + CSS» в <a href="loftschool.com">LoftSchool</a>.
           </div>
         </div>
         <div class="footer__center">
           <a class="logo" href="#">
-            <img class="logo__icon" src="img/logo/logo-fig.svg" alt="" />
+            <svg viewBox="0 0 99 53" width="99" height="84.8" class="logo__icon">
+              <use xlink:href="#logo"></use>
+            </svg>
           </a>
         </div>
         <div class="footer__right">
@@ -208,24 +231,98 @@
             <div class="footer__text">Наши социальные сети</div>
             <ul class="nav-social">
               <li class="social__item">
-                <a href="#" class="social__link" id="vk"></a>
+                <a href="#" class="social__link">
+                  <svg viewBox="0 0 20 20" width="20" height="20" class="social__icon_reverse">
+                    <use xlink:href="#vk"></use>
+                  </svg>
+                </a>
               </li>
               <li class="social__item">
-                <a href="#" class="social__link" id="facebook"></a>
+                <a href="#" class="social__link">
+                  <svg viewBox="0 0 20 20" width="20" height="20" class="social__icon_reverse">
+                    <use xlink:href="#facebook"></use>
+                  </svg>
+                </a>
               </li>
               <li class="social__item">
-                <a href="#" class="social__link" id="google"></a>
+                <a href="#" class="social__link">
+                  <svg viewBox="0 0 20 20" width="20" height="20" class="social__icon_reverse">
+                    <use xlink:href="#google"></use>
+                  </svg>
+                </a>
               </li>
               <li class="social__item">
-                <a href="#" class="social__link" id="skype"></a>
+                <a href="#" class="social__link">
+                  <svg viewBox="0 0 20 20" width="20" height="20" class="social__icon_reverse">
+                    <use xlink:href="#twitter"></use>
+                  </svg>
+                </a>
               </li>
               <li class="social__item">
-                <a href="#" class="social__link" id="mail"></a>
+                <a href="#" class="social__link">
+                  <svg viewBox="0 0 20 20" width="20" height="20" class="social__icon_reverse">
+                    <use xlink:href="#email"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
           </div>
         </div>
       </div>
     </footer>
+  
+    <svg class="icons-sprite">
+      <defs>
+        <g id="logo">
+          <circle cx="13" cy="40" r="11" stroke="#FBED20" stroke-width="4" fill="transparent" />
+          <path stroke="#39B549" stroke-width="4" d="M49 42l19-15M49 42l19-15" />
+          <path d="M77 44l22-11m-17-6l11 22M77 44l22-11m-17-6l11 22" stroke="#5DD1F8" stroke-width="4" />
+          <path d="M54 7L34 3l8 19L54 7z" stroke="#EC1E79" stroke-width="4" fill="transparent" />
+        </g>
+        <g id="main">
+          <path d="M2.13878 14.75L9.5 2L16.8612 14.75H2.13878Z" stroke-width="2" />
+        </g>
+        <g id="feed">
+          <path
+            d="M10.19 1.41l1.5 4.1a2.2 2.2 0 002.07 1.44h4.52c.07 0 .1.02.12.03.03.02.05.06.07.11v.13c0 .02-.02.06-.08.1l-3.4 2.18a2.2 2.2 0 00-.87 2.6l1.35 3.7c.02.05.02.1 0 .12a.21.21 0 01-.06.1.22.22 0 01-.12.05c-.02 0-.06 0-.12-.04l-3.98-2.56a2.2 2.2 0 00-2.38 0l-3.98 2.56c-.06.04-.1.04-.12.04a.22.22 0 01-.12-.05.22.22 0 01-.07-.1c0-.03-.01-.07.01-.13l1.35-3.68a2.2 2.2 0 00-.87-2.61L1.6 7.3c-.06-.03-.07-.07-.08-.1a.22.22 0 010-.12.22.22 0 01.07-.1c.02-.02.05-.04.12-.04h4.52A2.2 2.2 0 008.31 5.5l1.5-4.09a.18.18 0 01.07-.1.21.21 0 01.12-.03c.05 0 .09.01.12.03.02.02.05.04.07.1z"
+            stroke-width="2"
+          />
+        </g>
+        <g id="wallet">
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M0 14a2 2 0 002 2h15a2 2 0 002-2V6a2 2 0 00-2-2V2a2 2 0 00-2-2H2a2 2 0 00-2 2v12zM15 2H2v2h13V2zm2 6V6H2v8h15v-2h-2a2 2 0 110-4h2zm0 1.6v.8h-2a.4.4 0 010-.8h2z"
+          />
+        </g>
+        <g id="facebook">
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M20 10a10 10 0 11-20 0 10 10 0 0120 0zm-9.3.4h1.8l.3-2.3h-2V6.7c0-.5.3-.6.5-.6h1.5V4h-2C8.5 3.9 8 5.5 8 6.6v1.5H6.7v2.3H8v6.5h2.7v-6.5z"
+          />
+        </g>
+        <g id="google">
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M0 10a10 10 0 1020 0 10 10 0 00-20 0zm15.2-2.2v1.4h1.5v1h-1.5v1.5H14v-1.4h-1.4v-1h1.5V7.7h1zm-7.7 3V9h4v1c0 2.4-1.6 4.1-4 4.1-2.3 0-4.2-2-4.2-4.2 0-2.3 2-4.2 4.2-4.2 1.2 0 2 .5 2.8 1L9 8.2c-.3-.4-1-.6-1.5-.6A2.5 2.5 0 005 10c0 1.3 1.2 2.5 2.5 2.5 1.2 0 2-.8 2.2-1.7H7.5z"
+          />
+        </g>
+        <g id="twitter">
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M20 10a10 10 0 10-20 0 10 10 0 0020 0zm-5-2.2c0 3.4-2.6 7.3-7.3 7.3-1.4 0-2.8-.4-4-1.2h.7c1.1 0 2.2-.3 3.1-1-1 0-2-.8-2.3-1.8h1.1c-1.2-.3-2-1.4-2-2.6.3.2.7.3 1.1.3a2.6 2.6 0 01-.8-3.4A7.3 7.3 0 0010 8a2.6 2.6 0 014.4-2.4c.6 0 1.1-.3 1.6-.6-.2.6-.6 1.1-1.1 1.4.5 0 1-.2 1.4-.4-.3.5-.7 1-1.2 1.4v.3z"
+          />
+        </g>
+        <g id="vk">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M0 10a10 10 0 1020 0 10 10 0 00-20 0zm16-3.6c.4 0 .5.2.4.5-.2.8-1.8 3-2 3.3-.1.3-.2.4 0 .7l.4.4.6.6c.6.7 1.1 1.3 1.3 1.8 0 .4-.1.6-.6.6h-1.4c-.4 0-.6-.2-1-.7a18 18 0 00-.7-.8c-.9-.8-1.3-.9-1.5-.9-.3 0-.4 0-.4.5v1.3c0 .4 0 .6-1 .6-1.5 0-3.2-1-4.4-2.7a11.7 11.7 0 01-2.3-4.8c0-.2 0-.4.5-.4h1.4c.4 0 .5.1.7.5.7 2.1 1.9 4 2.4 4 .2 0 .2-.2.2-.6V8c0-.6-.2-.9-.4-1l-.1-.4c0-.2.1-.3.3-.3h2.3c.3 0 .4.1.4.5v2.9c0 .3.2.4.3.4.2 0 .3-.1.7-.5 1-1.1 1.7-3 1.7-3 .1-.2.3-.3.7-.3h1.4z">
+        </g>
+        <g id="email">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M0 10a10 10 0 1020 0 10 10 0 00-20 0zm4-4.5l6 4.9 6-4.9H4zm0 1.3l6 4.8 6-4.8v7.7H4V6.8z" />
+        </g>
+      </defs>
+    </svg>
   </body>
 </html>
