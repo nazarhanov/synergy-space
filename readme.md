@@ -2,4 +2,4 @@
 
 Layout of site in HTML and CSS.
 
-Browse it [here](https://nazarhanov.github.io/Workadium)
+Browse it in [git.io/workadium](https://git.io/workadium)
