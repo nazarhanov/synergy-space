@@ -41,6 +41,7 @@ body {
 }
 
 .logo__text {
+  margin-top: 20px;
   font-size: 22px;
   font-weight: bold;
   text-transform: uppercase;
@@ -49,12 +50,21 @@ body {
   color: #fff;
 }
 
+.intro__logo,
+.intro__link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .link {
   width: 182px;
   height: 44px;
   box-sizing: border-box;
   padding: 12px 20px;
   border: 3px solid #ec1e79;
+  text-align: center;
   text-transform: uppercase;
   text-decoration: none;
   font-size: 12px;
